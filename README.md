@@ -1,4 +1,3 @@
-
 # BUIDL Token Whitepaper
 
 *Rewarding Open Source Contributions on the Voi Blockchain*
@@ -105,13 +104,14 @@ Weekly cap:
 
 ### bVOI Balance Requirement
 
-To encourage onboarding while reinforcing sustainable distribution, the bVOI balance requirement is progressive:
+To encourage onboarding while maintaining economic alignment, bVOI balance requirements follow a simplified model:
 
-- **1st payout**: Contributor must hold at least **some** bVOI (no minimum).
-- **2nd payout**: Contributor must hold **at least 50%** of the BUIDL they are eligible to receive in bVOI.
-- **3rd payout and onward**: Contributor must hold a **full bVOI balance equal to their BUIDL payout** to remain eligible.
+- **1st payout**: No bVOI required.
+- **2nd payout and onward**: The contributor must maintain a bVOI balance equal to **at least 25%** of the total BUIDL they have received to date.
 
-For clarity, **1 bVOI must equal 1 BUIDL** in terms of eligibility. For example, to receive 100 BUIDL in the third or later weeks, the contributor must have a balance of at least 100 bVOI.
+For clarity, this means that if a contributor has received a total of 1,000 BUIDL over time, they must maintain a balance of at least 250 bVOI to continue receiving new BUIDL distributions.
+
+This structure ensures participants are economically invested in the system while providing a smoother ramp-up for new contributors.
 
 Sustainable Supply: 17,000,000 bVOI
 
