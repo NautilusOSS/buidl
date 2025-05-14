@@ -1,164 +1,161 @@
-# BUIDL Token Whitepaper
-
+# BUIDL Token Whitepaper  
 *Rewarding Open Source Contributions on the Voi Blockchain*
 
 ## Abstract
 
-The BUIDL Token is a decentralized, community-driven incentive mechanism deployed on the Voi blockchain. It is designed to reward meaningful contributions to open source software - a critical but often underfunded pillar of the modern digital ecosystem. By aligning incentives with actual contributions, BUIDL aims to create a more sustainable, inclusive, and efficient model for growing the open source economy.
+The BUIDL Token is a decentralized, community-driven incentive mechanism deployed on the Voi blockchain. It rewards meaningful contributions to open source software — a critical yet often underfunded pillar of the digital world. By aligning incentives with actual contributions, BUIDL fosters a more sustainable, inclusive, and efficient model for growing the open source economy.
 
 ## Introduction
 
-Open source software powers the internet, the tools we use every day, and the foundations of Web3. Despite its significance, most open source contributors receive little to no compensation for their time and expertise.
+Open source software powers the internet, the tools we use daily, and the foundations of Web3. Despite its impact, most contributors receive little or no compensation for their time and expertise.
 
 The BUIDL Token exists to change that.
 
-By providing a transparent and programmable reward system for contributors - whether they’re writing code, designing UX, fixing bugs, reviewing pull requests, or creating documentation - BUIDL empowers builders and ensures the long-term health of open source ecosystems.
+It provides a transparent, programmable reward system for contributors—whether writing code, designing UX, fixing bugs, reviewing pull requests, or creating documentation. BUIDL empowers builders and strengthens the long-term health of open source ecosystems.
 
 ## Vision
 
-Empower builders. Sustain open source. Grow together.
+**Empower builders. Sustain open source. Grow together.**
 
 ## Token Overview
 
-- Name: BUIDL Token ([View on Voiager](https://voiager.xyz/token/419744))
-- Description: BUIDL is a reward token for open source contributions, designed to incentivize participation and maintain a sustainable contributor economy within the Voi ecosystem.
-- Contract ID: 419744
-- Symbol: BUIDL
-- Type: Utility / Reward Token
-- Chain: Voi
-- Decimals: 8
-- Total Supply: 100,000,000 BUIDL
+- **Name**: BUIDL Token ([View on Voiager](https://voiager.xyz/token/419744))  
+- **Description**: BUIDL is a reward token for open source contributions, designed to incentivize participation and maintain a sustainable contributor economy within the Voi ecosystem.  
+- **Contract ID**: 419744  
+- **Symbol**: BUIDL  
+- **Type**: Utility / Reward Token  
+- **Chain**: Voi  
+- **Decimals**: 8  
+- **Total Supply**: 100,000,000 BUIDL  
 
 ## Build Voi (bVOI) Overview
 
-- Name: Build Voi ([View on Voiager](https://voiager.xyz/token/8471125))
-- Description: bVOI is a wrapped version of VOI used to stabilize the BUIDL token economy by backing the BUIDL/VOI liquidity pool and regulating reward distribution.
-- Contarct ID: 8471125
-- Symbol: bVOI
-- Type: Wrapped VOI Token
-- Chain: Voi
-- Decimals: 6
-- Function: Acts as a gatekeeper for BUIDL emissions by requiring users to hold bVOI in proportion to their payouts. Also used to rebalance liquidity when BUIDL deviates from its 1:1 peg with VOI.
-- Sustainable Supply: 17,000,000 bVOI (as of 9 Apr 2025)
+- **Name**: Build Voi ([View on Voiager](https://voiager.xyz/token/8471125))  
+- **Description**: bVOI is a wrapped version of VOI used to stabilize the BUIDL token economy by backing the BUIDL/VOI liquidity pool and regulating emissions.  
+- **Contract ID**: 8471125  
+- **Symbol**: bVOI  
+- **Type**: Wrapped VOI Token  
+- **Chain**: Voi  
+- **Decimals**: 6  
+- **Function**: Acts as a gatekeeper for BUIDL emissions by requiring users to hold bVOI in proportion to their payouts. Also used to rebalance liquidity when BUIDL deviates from its 1:1 peg with VOI.  
+- **Sustainable Supply**: 22,000,000 bVOI (as of 14 May 2025)
 
 ## Relationship Between BUIDL and Build Voi (bVOI)
 
-BUIDL and bVOI are designed to function in tandem, forming a closed-loop incentive and stabilization system for the BUIDL ecosystem.
+BUIDL and bVOI work together to form a closed-loop system for incentives and value stability.
 
-- **BUIDL** is the token used to reward contributors to open source projects.
-- **bVOI** is a wrapped VOI token that governs BUIDL issuance and helps stabilize its value.
+- **BUIDL** rewards contributors.  
+- **bVOI** backs BUIDL issuance and liquidity.
 
-Key aspects of the relationship include:
+Key dynamics:
 
-- **Peg Enforcement**: bVOI is used in a liquidity pool to maintain the target value of 1 BUIDL = 1 VOI.
-- **Distribution Gatekeeping**: bVOI acts as a throttle, requiring contributors to hold it in order to receive BUIDL rewards.
-- **Economic Feedback Loop**: As more BUIDL is distributed, demand for bVOI increases. If BUIDL supply exceeds peg, bVOI is used to buy BUIDL. If BUIDL trades above peg, more BUIDL is sold for VOI and converted into bVOI.
-- **Governance Synergy**: BUIDL holders govern the ecosystem, while bVOI holders back its stability—creating a system where contributors and patrons are both aligned.
+- **Peg Enforcement**: A BUIDL/VOI liquidity pool uses bVOI to maintain a soft 1:1 peg.  
+- **Distribution Control**: Contributors must hold bVOI to receive ongoing BUIDL rewards.  
+- **Feedback Loop**: More BUIDL issued → higher demand for bVOI. Price deviations are corrected using buys/sells.  
+- **Aligned Governance**: BUIDL holders govern the DAO. bVOI holders safeguard the system’s stability.
 
-This model ensures that distribution and valuation of BUIDL are tied directly to real economic support within the Voi ecosystem.
+This structure ties the value and flow of BUIDL directly to real economic support within the Voi ecosystem.
 
 ## Utility & Use Cases
 
-- Contributor Rewards
-- Bounties
-- Retroactive Funding
-- Governance
-- Reputation Layer
+- Contributor Rewards (automated or manual)  
+- Project Bounties (via community or DAO)  
+- Retroactive Funding (for completed work)  
+- Governance Participation  
+- Contribution Reputation System  
 
 ## Reward Mechanisms
 
-1. GitHub/GitLab Automation
-2. Project-Led Bounties
-3. DAO-Based Curation
-4. Retroactive Drops
+1. Automated GitHub/GitLab Recognition  
+2. Community-Led Bounties  
+3. DAO-Led Curation and Voting  
+4. Retroactive Reward Drops  
+
+## Payout Adjustments
+
+Weekly payouts are **adjusted proportionally** to fit within the weekly budget, based on the total unadjusted payout amounts for that week. If the total eligible rewards exceed the 100,000 BUIDL emission cap, each contributor receives a reduced share proportional to their original reward.
+
+To limit the impact of large individual rewards on the weekly pool, each contributor's **unadjusted payout is capped at 50,000 BUIDL** per week before proportional adjustment. This ensures broader distribution and prevents outsized claims from distorting the reward cycle.
+
+Any undistributed BUIDL is **rolled over** into the following week's budget, increasing the available emissions for future payouts.
 
 ## Distribution
 
-Total Supply: 100,000,000 BUIDL
-
-- Contributor Rewards: 100%
-
-Notes:
-
-- 100,000 BUIDL released per week.
-- If no contributions are made, tokens are added to the treasury.
-- No team/advisor/investor allocation.
-- Maximum weekly BUIDL per user is limited by their bVOI balance.
+- **Total Supply**: 100,000,000 BUIDL  
+- **Contributor Rewards**: 100%  
+- **Weekly Emissions**: 100,000 BUIDL  
+- **Unclaimed Rewards**: Rolled into the Treasury  
+- **Team/Advisor/Investor Allocation**: None  
+- **Weekly Cap**: Maximum BUIDL per user is limited by their bVOI balance  
+- **Individual Payout Cap**: Each contributor's unadjusted weekly payout is capped at **50,000 BUIDL** to ensure fairness and reduce distortion during proportional adjustments  
 
 ## Price Stability Mechanism
 
 To maintain a soft peg of 1 BUIDL = 1 VOI, the protocol introduces Build Voi (bVOI), a wrapped VOI token used to fund and stabilize the BUIDL/VOI liquidity pool.
 
-If BUIDL < 1 VOI:
-
+**If BUIDL < 1 VOI**:  
 - Block rewards are used to buy BUIDL from the market.
 
-If BUIDL > 1 VOI:
-
-- Treasury sells BUIDL for VOI.
+**If BUIDL > 1 VOI**:  
+- Treasury sells BUIDL for VOI.  
 - VOI is rewrapped as bVOI and added back to liquidity.
 
-Weekly cap:
-
+**Weekly Cap**:  
 - Users can only receive BUIDL up to their bVOI balance each week.
 
 ### bVOI Balance Requirement
 
-To encourage onboarding while maintaining economic alignment, bVOI balance requirements follow a simplified model:
+Contributors can receive their first BUIDL payout without holding bVOI.  
+Starting with the second payout, they must hold bVOI equal to **at least 25%** of the total BUIDL they've received to date.
 
-- **1st payout**: No bVOI required.
-- **2nd payout and onward**: The contributor must maintain a bVOI balance equal to **at least 25%** of the total BUIDL they have received to date.
+**Example**: If a contributor has received 1,000 BUIDL, they must maintain a balance of 250 bVOI to continue receiving new BUIDL rewards.
 
-For clarity, this means that if a contributor has received a total of 1,000 BUIDL over time, they must maintain a balance of at least 250 bVOI to continue receiving new BUIDL distributions.
-
-This structure ensures participants are economically invested in the system while providing a smoother ramp-up for new contributors.
-
-Sustainable Supply: 17,000,000 bVOI
+This model encourages long-term participation and economic alignment while lowering the barrier for first-time contributors.
 
 ## Governance
 
 The BUIDL ecosystem is governed by the BUIDLDAO:
 
-- BUIDL holders are members of the DAO.
-- bVOI holders are patrons who support liquidity and reward limits.
+- **Members**: BUIDL holders. Propose and vote on upgrades, treasury use, and policy.  
+- **Patrons**: bVOI holders. Influence weekly distributions and support price stability.
 
-Members (BUIDL holders): Propose and vote on upgrades, treasury use, and policy.
-Patrons (bVOI holders): Influence weekly distribution by backing contributors.
-
-Governance starts with multisig and evolves to full DAO.
+Governance begins with a multisig structure and evolves toward a full DAO over time.
 
 ## Funding Policy
 
-To maintain fairness and avoid double compensation, the following rules apply:
+To ensure fairness and avoid double compensation:
 
-- Recognized contributions rewarded by BUIDLDAO are not eligible for Voi retroactive grant proposals.
-- By receiving BUIDL tokens, contributors explicitly agree that their work is part of the DAO’s collective effort.
-- Retroactive grant proposals to external ecosystems (e.g., Voi) will be submitted on behalf of contributors by BUIDLDAO.
-- Any tokens received from these grants will first be used to reimburse the BUIDL Treasury. Any remaining tokens will be split 90/10 between the contributor and the BUIDL Treasury.
+- Contributions rewarded by BUIDLDAO are ineligible for additional retroactive grants from the Voi ecosystem.  
+- Contributors receiving BUIDL agree their work is part of the DAO's collective effort.  
+- Retroactive proposals to third parties (e.g., Voi) will be submitted by BUIDLDAO on behalf of contributors.  
+- If external grants are received:  
+  - First: Reimburse the BUIDL Treasury.  
+  - Remainder: 90% to the contributor, 10% to the DAO.
 
-Compliance & Enforcement:
-
-- Failure to abide by this funding policy will result in blacklisting from future BUIDLDAO rewards and participation.
-- Remediation may be made by sending the improperly received funds to the DAO treasury to restore standing.
+**Compliance**:  
+- Violations may result in blacklisting from BUIDL rewards.  
+- Contributors can restore eligibility by sending improperly received funds back to the DAO Treasury.
 
 ## Roadmap
 
-Q1 2025:
+**Q1 2025**  
+- Launch BUIDL Token on Voi  
+- Deploy Bounty Board MVP  
 
-- Token launch on Voi
-- Bounty board
-
-Q2 2025 and beyond:
-
-- GitHub integration MVP
-- DAO activation
-- Contributor dashboard
-- Partnerships
-- Multi-repo support
-- Developer tool integrations
-- Contributor score
-- DAO grants
+**Q2 2025 and Beyond**  
+- GitHub Integration MVP  
+- DAO Activation  
+- Contributor Dashboard  
+- Strategic Partnerships  
+- Multi-Repo Support  
+- Developer Tool Integrations  
+- Contributor Scoring System  
+- DAO Grant Program  
 
 ## Conclusion
 
-BUIDL transforms open source from a volunteer effort into a sustainable system. Built on Voi, it leverages fast, low-cost infrastructure to reward contributors and maintain economic stability. The use of Build Voi ensures price alignment while bVOI balances regulate distribution. Join us - and BUIDL together.
+BUIDL transforms open source from a volunteer effort into a sustainable economy.  
+Built on the fast, low-cost Voi blockchain, it rewards contributors and maintains value stability via Build Voi (bVOI).  
+Together, they create a flywheel of aligned incentives for builders and backers alike.
+
+**Join us — and BUIDL together.**
