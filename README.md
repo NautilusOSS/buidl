@@ -119,9 +119,6 @@ Together, these tokens form a **closed-loop incentive system** that aligns indiv
 
 bVOI Ratio = held_bVOI / (0.25 × bLFR_total)
 
-markdown
-Copy code
-
 - **If ratio ≥ 1.0:** contributor receives their full eligible share.  
 - **If ratio < 1.0:** payout is scaled linearly by the ratio (e.g., 0.8 ratio → 80% payout).  
 
