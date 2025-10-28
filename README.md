@@ -1,8 +1,8 @@
 # BUIDL Token Whitepaper  
 *Rewarding Open Source Contributions on the Voi Blockchain*  
 
-**Version:** 1.2  
-**Last Updated:** October 1, 2025  
+**Version:** 1.3  
+**Last Updated:** October 25, 2025  
 
 ---
 
@@ -10,7 +10,9 @@
 
 The **BUIDL Token** is a decentralized, community-driven incentive mechanism deployed on the Voi blockchain. It rewards meaningful contributions to open source software — a critical yet underfunded foundation of the digital economy.  
 
-By pairing with **Build Voi (bVOI)**, a wrapped VOI token that stabilizes liquidity, and **BUIDL Lifetime Rewards (bLFR)**, a non-transferable ARC-200 token that tracks lifetime payouts, BUIDL aligns contributor rewards with long-term stability and accountability. This tri-token model ensures sustainability, prevents gaming of requirements, and creates a self-reinforcing ecosystem for builders and backers alike.  
+By pairing with **Build Voi (bVOI)**, a wrapped VOI token that stabilizes liquidity, and **BUIDL Lifetime Rewards (bLFR)**, a non-transferable ARC-200 token that tracks lifetime payouts, BUIDL aligns contributor rewards with long-term stability and accountability.  
+
+The emission system is fully **proportional and gated by each contributor’s bVOI balance**, ensuring that rewards scale with commitment and ecosystem participation. This tri-token model creates a self-reinforcing economy for builders and backers alike.  
 
 ---
 
@@ -69,7 +71,7 @@ Its sole function is to **track the lifetime total of BUIDL earned by each addre
 
 ## Relationship Between Tokens  
 
-The system now operates with **three interdependent tokens**:  
+The system operates with **three interdependent tokens**:  
 
 - **BUIDL** → Contributor rewards (transferable).  
 - **bVOI** → Stability and peg enforcement (wrapped VOI, transferable).  
@@ -77,10 +79,10 @@ The system now operates with **three interdependent tokens**:
 
 ### Dynamics  
 
-- Contributors earn **BUIDL**.  
+- Contributors earn **BUIDL** for verified work.  
 - Each payout mints matching **bLFR**, recording lifetime rewards.  
 - Ongoing payouts require contributors to hold **bVOI equal to 25% of their bLFR balance**.  
-- bVOI stabilizes the BUIDL/VOI peg via liquidity rebalancing.  
+- Weekly reward weighting is determined by each contributor’s **bVOI ratio**, ensuring proportional and sustainable distribution.  
 
 Together, these tokens form a **closed-loop incentive system** that aligns individual rewards with long-term ecosystem stability.  
 
@@ -107,14 +109,27 @@ Together, these tokens form a **closed-loop incentive system** that aligns indiv
 
 ## Payout Adjustments  
 
-- **Weekly Emissions**: 100,000 BUIDL  
-- **Proportional Adjustment**: Rewards scaled to fit within the cap.  
-- **Individual Cap**: No more than **50,000 BUIDL per week** (pre-adjustment) per contributor.  
-- **Emission Split**:  
-  - **50% Outgoing Payments** → distributed immediately.  
-  - **50% Rollover Pool** → gated by bVOI balance, distributed proportionally.  
+- **Weekly Emissions:** 100,000 BUIDL  
+- **Distribution:** 100% distributed proportionally each week, gated by bVOI balance.  
+- **Eligibility:** Contributors must maintain the required **bVOI coverage ratio** (25% of their bLFR balance) to receive full rewards.  
 
-Unused Outgoing Payments flow into the Rollover Pool. Any remaining undistributed tokens roll forward into the next week’s budget.  
+### Weighted Payout Model  
+
+- Contributors’ weekly rewards are **weighted by their current bVOI ratio**, defined as:  
+
+bVOI Ratio = held_bVOI / (0.25 × bLFR_total)
+
+- **If ratio ≥ 1.0:** contributor receives their full eligible share.  
+- **If ratio < 1.0:** payout is scaled linearly by the ratio (e.g., 0.8 ratio → 80% payout).  
+
+### Allocation Logic  
+
+- Weekly emission cap: **100,000 BUIDL**  
+- Individual soft cap: **50,000 BUIDL** (pre-adjustment)  
+- Rewards are normalized across all contributors so the total weekly output never exceeds the emission cap.  
+- **Unclaimed portions** automatically roll into the next week’s emission pool.  
+
+This unified mechanism replaces the prior “Outgoing Payments + Rollover Pool” split, simplifying distribution while maintaining sustainability and reinforcing the bVOI stability requirement.  
 
 ---
 
@@ -134,9 +149,9 @@ Unused Outgoing Payments flow into the Rollover Pool. Any remaining undistribute
 To sustain a **soft peg (1 BUIDL = 1 VOI)**:  
 
 - **If BUIDL < 1 VOI** → protocol buys BUIDL with block rewards.  
-- **If BUIDL > 1 VOI** → treasury sells BUIDL, wraps VOI as bVOI, adds liquidity.  
+- **If BUIDL > 1 VOI** → treasury sells BUIDL, wraps VOI as bVOI, and adds liquidity.  
 
-### bVOI Requirement (Now using bLFR)  
+### bVOI Requirement (Enforced via bLFR)  
 
 - **First payout**: No bVOI required.  
 - **Subsequent payouts**: Must hold **25% of total bLFR balance in bVOI**.  
@@ -150,7 +165,7 @@ To sustain a **soft peg (1 BUIDL = 1 VOI)**:
 
 The BUIDL ecosystem is managed through **BUIDLDAO**:  
 
-- **Builders** (BUIDL holders): propose and vote on upgrades, treasury allocations, policies.  
+- **Builders** (BUIDL holders): propose and vote on upgrades, treasury allocations, and policy changes.  
 - **Patrons** (bVOI holders): safeguard stability and influence weekly distributions.  
 
 Governance begins as a multisig → transitions to full DAO.  
@@ -164,8 +179,8 @@ To prevent double compensation:
 - Work rewarded by BUIDLDAO is **not eligible** for separate Voi retroactive grants.  
 - Retroactive proposals (to external parties) are submitted only by the DAO.  
 - If external funds are received:  
-  - First: DAO Treasury reimbursed.  
-  - Remaining: 90% to contributor, 10% to DAO.  
+- First: DAO Treasury reimbursed.  
+- Remaining: 90% to contributor, 10% to DAO.  
 
 **Enforcement**: Misuse leads to blacklisting, reversible only by returning funds.  
 
@@ -197,6 +212,11 @@ BUIDL turns open source from volunteer work into a sustainable economy. Paired w
 ---
 
 ## Changelog  
+
+**v1.3 — October 25, 2025**  
+- Unified emissions model: replaced *Outgoing Payments + Rollover Pool* with a single **proportional distribution gated by bVOI**.  
+- Added **Weighted Payout Model** and clarified proportional scaling logic.  
+- Updated **Abstract** and **Relationship Between Tokens** to reflect unified emissions.  
 
 **v1.2 — October 1, 2025**  
 - Added **BUIDL Lifetime Rewards (bLFR)** as a non-transferable ARC-200 token.  
